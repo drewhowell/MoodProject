@@ -12,9 +12,9 @@ As a human with feelings, I want to listen to music and view content that matche
 
 When the user lands on the page, they're presented with a question of: What's your current mood?
 
-The user is then presented with 3 button options: Happy, Chill, & Sad.
+The user is then presented with 3 button options: Happy, Chill, & Party.
 
-Clicking on a button displays songs & images below matching the emotion of the button clicked.
+Clicking on a button displays songs & images below that match the emotion of the button clicked.
 
 This app uses the Spotify API for a list of songs and the Giphy API for a list of images.
 
