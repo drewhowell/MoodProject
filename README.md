@@ -24,11 +24,11 @@ This app is built with the material css framework.
 
 ## User Flow
 
-![User Flow](assets/images/Project 1_ Mood - User Flow.png)
+![userflowimage](assets/images/userflow.png)
 
 
 ## Wireframe
 
-![Wire frame](assets/images/Project 1_ Mood - Wireframe.png)
+![wireframeimage](assets/images/wireframe.png)
 
 
