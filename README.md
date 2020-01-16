@@ -24,7 +24,7 @@ This app is built with the material css framework.
 
 ## User Flow
 
-![userflowimage](assets/images/userflow.png)
+![userflowimage](assets/images/ userflow.png)
 
 
 ## Wireframe
