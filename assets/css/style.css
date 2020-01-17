@@ -1,22 +1,3 @@
-.mdl-mini-footer {
-    justify-content: center;
-}
-
-.demo-card-wide.mdl-card {
-  width: 100%;
-}
-.demo-card-wide > .mdl-card__title {
-  color: black;
-  height: 176px;
-}
-.demo-card-wide > .mdl-card__menu {
-  color: #fff;
-}
-
-.mdl-cell--4-col {
-    text-align: center;
-}
-
 .canvas-interactive-wrapper {
   position: relative;
   height: 300px;
@@ -53,3 +34,4 @@
 .canvas-interactive-wrapper .cta-wrapper a.active {
   border-color: #222;
 }
+Granim v2.0.0, created by Benjamin Blonde. MIT l
