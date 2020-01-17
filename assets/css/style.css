@@ -34,4 +34,13 @@
 .canvas-interactive-wrapper .cta-wrapper a.active {
   border-color: #222;
 }
-Granim v2.0.0, created by Benjamin Blonde. MIT l
+
+.demo-card-wide {
+  width: 100%;
+}
+
+.mdl-layout__header {
+  background-color: gray;
+  color: rgb(255,255,255);
+  text-align: center;
+}
