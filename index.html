@@ -9,6 +9,7 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.min.js"></script>
+
     <script src="granim.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
@@ -30,9 +31,9 @@
         <div class="canvas-interactive-wrapper">
                 <canvas id="canvas-interactive"></canvas>
                 <div class="cta-wrapper">
-                    <a href="#default-state" id="default-state-cta" class="active">Happy</a>
-                    <a href="#violet-state" id="violet-state-cta">Chill</a>
-                    <a href="#orange-state" id="orange-state-cta">Party</a>
+                    <a href="#default-state" id="default-state-cta" class="active btn-generateimg">Happy</a>
+                    <a href="#violet-state" id="violet-state-cta" class="btn-generateimg">Chill</a>
+                    <a href="#orange-state" id="orange-state-cta" class="btn-generateimg">Party</a>
                 </div>
             </div>
 
@@ -56,7 +57,7 @@
                               <div class="mdl-card__supporting-text">
                                 Here are some images to match your mood:
                               </div>
-                              <div class="mdl-card__actions mdl-card--border">
+                              <div class="mdl-card__actions mdl-card--border" id="giphyImages">
                               <p>(giphy images will go here)</p>
                               </div>
                           </div>
@@ -70,5 +71,7 @@
 </body>
 
 <script src="assets/javascript/main.js"></script>
+<script src="assets/javascript/giphy.js"></script>
+<script src="assets/javascript/spotify.js"></script>
     
 </html>
