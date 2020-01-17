@@ -8,6 +8,8 @@
     <title>Mood</title>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.min.js"></script>
+    <script src="granim.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
@@ -17,78 +19,55 @@
 
 <body>
 
-<!-- Always shows a header, even in smaller screens. -->
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <header class="mdl-layout__header">
-      <div class="mdl-layout__header-row">
-        <!-- Title -->
-        <span class="mdl-layout-title">What's your current mood?</span>
-      </div>
-    </header>
-    <main class="mdl-layout__content">
-      <div class="page-content">
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+                <header class="mdl-layout__header">
+                  <div class="mdl-layout__header-row">
+                    <!-- Title -->
+                    <span class="mdl-layout-title">What's your current mood?</span>
+                  </div>
+                </header>
 
-        <br>
-
-        <div class="mdl-grid">
-            <div class="mdl-cell mdl-cell--4-col">
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-                    Happy
-                </button>
+        <div class="canvas-interactive-wrapper">
+                <canvas id="canvas-interactive"></canvas>
+                <div class="cta-wrapper">
+                    <a href="#default-state" id="default-state-cta" class="active">Default state</a>
+                    <a href="#violet-state" id="violet-state-cta">Violet state</a>
+                    <a href="#orange-state" id="orange-state-cta">Orange state</a>
+                </div>
             </div>
-            <div class="mdl-cell mdl-cell--4-col">
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-                    Chill
-                </button>
-            </div>
-            <div class="mdl-cell mdl-cell--4-col">
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-                    Party
-                </button>
-            </div>
-          </div>
 
-        </div>
-
-        <br>
+            <main class="mdl-layout__content">
+                    <div class="page-content">
+              
+                      <br>
+                          
+                      <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                          <div class="mdl-card__supporting-text">
+                            Here are some songs to match your mood:
+                          </div>
+                          <div class="mdl-card__actions mdl-card--border">
+                          <p>(spotify playlist will go here)</p>
+                          </div>
+                      </div>
+              
+                      <br>
+              
+                      <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                              <div class="mdl-card__supporting-text">
+                                Here are some images to match your mood:
+                              </div>
+                              <div class="mdl-card__actions mdl-card--border">
+                              <p>(giphy images will go here)</p>
+                              </div>
+                          </div>
+              
+                  </main>
             
-        <div class="demo-card-wide mdl-card mdl-shadow--2dp">
-            <div class="mdl-card__supporting-text">
-              Here are some songs to match your mood:
-            </div>
-            <div class="mdl-card__actions mdl-card--border">
-            <p>(spotify playlist will go here)</p>
-            </div>
         </div>
-
-        <br>
-
-        <div class="demo-card-wide mdl-card mdl-shadow--2dp">
-                <div class="mdl-card__supporting-text">
-                  Here are some images to match your mood:
-                </div>
-                <div class="mdl-card__actions mdl-card--border">
-                <p>(giphy images will go here)</p>
-                </div>
-            </div>
-
-    </main>
-
-    <footer class="mdl-mini-footer">
-        <div class="mdl-mini-footer__left-section">
-            <div class="mdl-logo"> ♥︎ The Mood Company ♥︎ </div>
-        </div>
-    </footer>
-
-  </div>
-
 
 
 </body>
 
 <script src="assets/javascript/main.js"></script>
-<script src="assets/javascript/spotify.js"></script>
-<script src="assets/javascript/giphy.js"></script>
-
+    
 </html>
-
