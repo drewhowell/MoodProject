@@ -42,4 +42,5 @@
 .mdl-layout__header {
   background-color: gray;
   color: rgb(255,255,255);
+  text-align: center;
 }
