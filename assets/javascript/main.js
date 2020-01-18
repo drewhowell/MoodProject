@@ -9,21 +9,24 @@ var granimInstance = new Granim({
         "default-state": {
             gradients: [
                 ['#B3FFAB', '#12FFF7'],
-                ['#ADD100', '#7B920A'],
-                ['#1A2980', '#26D0CE']
+                ['#47a7d1', '#26D0CE'],
+                ['#EAEE6C', '#B3EE6C']
             ],
-            transitionSpeed: 10000
+            transitionSpeed: 3500
         },
         "violet-state": {
             gradients: [
                 ['#9D50BB', '#6E48AA'],
                 ['#4776E6', '#8E54E9']
             ],
-            transitionSpeed: 2000
+            transitionSpeed: 3500
         },
         "orange-state": {
-            gradients: [ ['#FF4E50', '#F9D423'] ],
-            loop: false
+            gradients: [ 
+                ['#FF4E50', '#F9D423'], 
+                ['#EF2C60', '#EE6C8F']
+            ],
+            transitionSpeed: 3500,
         }
     }
 });
