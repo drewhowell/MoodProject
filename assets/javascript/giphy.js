@@ -19,7 +19,7 @@ $(document).ready(function(){
         let searchUrl = giphyUrl + name + "&"+limit+"&"+ api_key
         $.get(searchUrl,function(data){
             data.data.forEach(element => {
-                let myimg = $('<img id="imgGiphy" style="width: 80px;">')
+                let myimg = $('<img id="imgGiphy" style="width: 100px;">')
                 myimg.attr('src', element.images.fixed_height.url);
                 myimg.appendTo('#giphyImages');          
                 
