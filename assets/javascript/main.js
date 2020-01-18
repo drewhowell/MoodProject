@@ -8,6 +8,12 @@ var granimInstance = new Granim({
     states : {
         "default-state": {
             gradients: [
+                ['#C2C9D4', '#B2B7C1'],
+            ],
+            transitionSpeed: 3500
+        },
+        "happy-state": {
+            gradients: [
                 ['#B3FFAB', '#12FFF7'],
                 ['#47a7d1', '#26D0CE'],
                 ['#EAEE6C', '#B3EE6C']
@@ -36,6 +42,11 @@ $('#default-state-cta').on('click', function(event) {
     event.preventDefault();
     granimInstance.changeState('default-state');
     setClass('#default-state-cta')
+});
+$('#happy-state-cta').on('click', function(event) {
+    event.preventDefault();
+    granimInstance.changeState('happy-state');
+    setClass('#happy-state-cta')
 });
 $('#violet-state-cta').on('click', function(event) {
     event.preventDefault();
