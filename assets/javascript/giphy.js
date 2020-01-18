@@ -15,11 +15,11 @@ $(document).ready(function(){
         $('#giphyImages').text('')
         let giphyUrl = "https://api.giphy.com/v1/stickers/search?q="
         let api_key ="api_key=dc6zaTOxFJmzC"
-        let limit = "limit=20"
+        let limit = "limit=30"
         let searchUrl = giphyUrl + name + "&"+limit+"&"+ api_key
         $.get(searchUrl,function(data){
             data.data.forEach(element => {
-                let myimg = $('<img id="imgGiphy" style="width: 100px;">')
+                let myimg = $('<img id="imgGiphy" style="width: 80px;">')
                 myimg.attr('src', element.images.fixed_height.url);
                 myimg.appendTo('#giphyImages');          
                 
