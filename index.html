@@ -20,19 +20,23 @@
 
 <body>
 
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-  <header class="mdl-layout__header">
-    <div class="mdl-layout__header-row">
-      <span class="mdl-layout-title">What's your current mood?</span>
-    </div>
-  </header>
+<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+        <header class="mdl-layout__header mdl-layout__header--transparent">
+          <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <img src="assets/images/mood.png" alt="mood logo" height="75px" width="75px">
+            <span class="mdl-layout-title">What type of party are you planning?</span>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+          </div>
+        </header>
 
   <div class="canvas-interactive-wrapper">
     <canvas id="canvas-interactive"></canvas>
       <div class="cta-wrapper">
-        <a href="#happy-state" id="happy-state-cta" class="btn-generateimg">Happy</a>
+        <a href="#happy-state" id="happy-state-cta" class="btn-generateimg">Celebratory</a>
         <a href="#violet-state" id="violet-state-cta" class="btn-generateimg">Chill</a>
-        <a href="#orange-state" id="orange-state-cta" class="btn-generateimg">Party</a>
+        <a href="#orange-state" id="orange-state-cta" class="btn-generateimg">Dance</a>
       </div>
   </div>
 
@@ -43,10 +47,10 @@
                           
     <div class="demo-card-wide mdl-card mdl-shadow--2dp">
       <div class="mdl-card__supporting-text">
-        Here are some songs to match your mood
+        Check out this list of songs for your party:
       </div>
       <div class="mdl-card__actions mdl-card--border">
-        <p>(spotify playlist will go here)</p>
+        <p>(songs will go here)</p>
       </div>
     </div>
               
@@ -54,12 +58,25 @@
               
     <div class="demo-card-wide mdl-card mdl-shadow--2dp">
       <div class="mdl-card__supporting-text">
-        Here are some images to match your mood:
+        Check out these locations for your party:
       </div>
       <div class="mdl-card__actions mdl-card--border" id="giphyImages">
-        <p>(giphy images will go here)</p>
+        <p>(google maps will go here)</p>
       </div>
     </div>
+
+    <br>
+                          
+    <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+      <div class="mdl-card__supporting-text">
+        Check out these recipes for your party:
+      </div>
+      <div class="mdl-card__actions mdl-card--border">
+        <p>(recipes will go here)</p>
+      </div>
+    </div>
+              
+    <br>
                   
             
 </div>
