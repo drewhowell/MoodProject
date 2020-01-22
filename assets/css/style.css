@@ -1,5 +1,5 @@
 .canvas-interactive-wrapper {
-  height: 300px;
+  height: 150px;
   text-align: center;
 }
 
@@ -15,13 +15,13 @@
 }
 
 .canvas-interactive-wrapper .cta-wrapper {
-  margin-top: 130px;
+  margin-top: 50px;
 }
 
 .canvas-interactive-wrapper .cta-wrapper a {
   position: relative;
   display: inline-block;
-  padding: 3px 7px;
+  padding: 10px 10px;
   border: solid 1px transparent;
   margin-right: 50px;
   z-index: 1;
@@ -35,11 +35,22 @@
 }
 
 .demo-card-wide {
-  width: 100%;
+  width: 75%;
+  margin-left: 10%;
+  margin-bottom: 2.5%;
+  margin-top: 2.5%;
 }
 
-.mdl-layout__header {
-  background-color: gray;
-  color: rgb(255,255,255);
-  text-align: center;
+.demo-layout-transparent {
+  background: url('../assets/demos/transparent.jpg') center / cover;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+}
+
+a {
+  font-size: 24px;
 }
