@@ -51,6 +51,10 @@
   color: white;
 }
 
-a {
+.btn-generateimg {
   font-size: 24px;
+}
+
+a {
+  color: rgb(255,64,129);
 }
