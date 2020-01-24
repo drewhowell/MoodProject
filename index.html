@@ -15,6 +15,22 @@
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <link rel="stylesheet" href="assets/css/style.css"></link>
+    
+    <!-- add -->
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+  />
+  <style>
+    /* Set the size of the div element that contains the map */
+    #map {
+      height: 400px; 
+      width: 100%; 
+    }
+  </style>
+
 
 </head>
 
@@ -34,10 +50,11 @@
   <div class="canvas-interactive-wrapper">
     <canvas id="canvas-interactive"></canvas>
       <div class="cta-wrapper">
-        <a href="#happy-state" id="happy-state-cta" class="btn-generateimg">Celebratory</a>
-        <a href="#violet-state" id="violet-state-cta" class="btn-generateimg">Chill</a>
-        <a href="#orange-state" id="orange-state-cta" class="btn-generateimg">Dance</a>
+        <a href="#happy-state" id="happy-state-cta" class="btn-generateimg" data-info="celebratory">Celebratory</a>
+        <a href="#violet-state" id="violet-state-cta" class="btn-generateimg"  data-info="chill">Chill</a>
+        <a href="#orange-state" id="orange-state-cta" class="btn-generateimg"  data-info="dance">Dance</a>
       </div>
+      
   </div>
 
   <main class="mdl-layout__content">
@@ -61,7 +78,7 @@
         Check out these locations for your party:
       </div>
       <div class="mdl-card__actions mdl-card--border" id="giphyImages">
-        <p>(google maps will go here)</p>
+        <div id="map"></div>
       </div>
     </div>
 
@@ -111,5 +128,18 @@
 <script src="assets/javascript/main.js"></script>
 <script src="assets/javascript/spotify.js"></script>
 <script src="assets/javascript/recipe.js"></script>
-    
+<!-- add -->
+<script src="assets/javascript/app.js"></script>
+<!-- add -->
+<script
+src="https://code.jquery.com/jquery-2.2.4.js"
+integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+crossorigin="anonymous"
+></script>
+<!-- add -->
+<script
+      async
+      defer 
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBnr6NpBsroUFg5Grwelp3oO5LzTl4MtY&libraries=places&callback=initialize"
+    ></script>
 </html>
